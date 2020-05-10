@@ -14,7 +14,7 @@ public class ChuckController {
     ChuckNorrisQuotes quotes = new ChuckNorrisQuotes();
     String quote = quotes.getRandomQuote();
 
-    @RequestMapping("/")
+    @RequestMapping("/app")
     public ModelAndView indexGet() {
         return new ModelAndView("index", "quote", quote);
     }
